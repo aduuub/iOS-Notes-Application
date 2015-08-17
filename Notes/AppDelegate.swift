@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  Notes
-//
-//  Created by PJ Vea on 2/7/15.
-//  Copyright (c) 2015 Vea Software. All rights reserved.
-//
+
 
 import UIKit
 
@@ -15,7 +9,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // 0qpXR11yv9IOG9dcAPl7j2AMITRqAm8BbxHfWYqO
+        // N3Fr6b4kl2DSwHWLaqgbEIFEHijg4VG3mtyr24NG
+        
+        Parse.enableLocalDatastore()
+        
+        Parse.setApplicationId("XB30M2TwbTXQ0nAlK0cYdNx5vyVtVyAjuFGZf4W0", clientKey: "aXRWFrSne7Xz1yGlF4WoUZw5ltp61rGCaVgcZsBe")
+        
+        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
+        
         return true
     }
 
